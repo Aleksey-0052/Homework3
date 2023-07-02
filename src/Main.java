@@ -44,13 +44,13 @@ public class Main {
         int age = 35;
         if (age < 2) {
             System.out.println("Если возраст человека равен " + age + ", то ему пора спать");
-        } else if (age >= 2 && age <= 6) {
+        } else if (age <= 6) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
-        } else if (age > 6 && age <= 18) {
+        } else if (age <= 18) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
-        } else if (age > 18 && age <= 24) {
+        } else if (age <= 24) {
             System.out.println("Если возраст человека равен " + age + ", то его место в университете");
-        } else if (age > 24 && age <= 60) {
+        } else if (age <= 60) {
             System.out.println("Если возраст человека равен " + age + ", то ему пора ходить на работу");
         } else {
             System.out.println("Если возраст человека равен " + age + ", то он может отдохнуть");
@@ -62,7 +62,7 @@ public class Main {
         int childAge = 14;
         if (childAge < 5) {
             System.out.println("Если возраст ребенка равен " + childAge + ", то ему нельзя кататься на аттракционе");
-        } else if (childAge >= 5 && childAge < 14) {
+        } else if (childAge < 14) {
             System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе в сопровождении взрослого");
         } else {
             System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе без сопровождения взрослого");
@@ -71,11 +71,11 @@ public class Main {
     public static void task6() {
         System.out.println("Задача 6");
 
-        int CarTrainPassengersNumber = 102;
-        if (CarTrainPassengersNumber >= 0 && CarTrainPassengersNumber < 60) {
-            System.out.println("Если в вагоне количество пассажиров равно " + CarTrainPassengersNumber + ", то в вагоне есть сидячее место");
-        } else if (CarTrainPassengersNumber >= 60 && CarTrainPassengersNumber <=101) {
-            System.out.println("Если в вагоне количество пассажиров равно " + CarTrainPassengersNumber + ", то в вагоне есть стоячее место");
+        int carTrainPassengersNumber = 102;
+        if (carTrainPassengersNumber >= 0 && carTrainPassengersNumber < 60) {
+            System.out.println("Если в вагоне количество пассажиров равно " + carTrainPassengersNumber + ", то в вагоне есть сидячее место");
+        } else if (carTrainPassengersNumber <=101) {
+            System.out.println("Если в вагоне количество пассажиров равно " + carTrainPassengersNumber + ", то в вагоне есть стоячее место");
         } else {
             System.out.println("В вагоне мест нет");
         }
